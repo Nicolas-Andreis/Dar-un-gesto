@@ -1,0 +1,15 @@
+.sucribete-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    border: 1px solid green;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    button{
+        width: 6rem;
+        height: 2rem;
+        padding: initial;
+        margin: auto;
+    }
+}
