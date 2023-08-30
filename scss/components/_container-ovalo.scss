@@ -15,7 +15,7 @@
 
     .ovalo {
         background-color: none;
-        border: 1px solid #91C588;
+        border: 1px solid $verde;
         height: 5rem;
         width: 4rem;
         border-radius: 4rem;
@@ -24,6 +24,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        box-shadow: map-get($sombra, normal);
 
         img {
             width: 3rem;

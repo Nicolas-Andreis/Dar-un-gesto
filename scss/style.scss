@@ -1,8 +1,10 @@
 //UTILITIES
-
+@import "../scss/utilities/variables";
+@import "../scss/utilities/maps";
 
 // RESET
-
+@import "../scss/base/reset";
+@import "../scss/base/typo";
 
 // PAGES
 
@@ -13,6 +15,7 @@
 @import "../scss/components/suscribite";
 @import "../scss/components/card";
 @import "../scss/components/redes";
+@import "../scss/components/title";
 
 
 

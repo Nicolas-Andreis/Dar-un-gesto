@@ -1,9 +1,10 @@
 footer {
-    background-color: gray;
+    border-top: 1px solid $verde;
 
     div:nth-child(1) {
         display: flex;
         justify-content: center;
+        margin-top: 4rem;
     }
     div:nth-child(2) {
         text-align: center;

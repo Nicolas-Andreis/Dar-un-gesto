@@ -2,16 +2,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 90%;
-    border: 1px solid green;
+    width: 95%;
+    border: 1px solid $verde;
     border-radius: 1rem;
     margin: 1rem auto;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: map-get($sombra, normal);
     button{
         width: 6rem;
         height: 2rem;
         padding: initial;
         margin: auto;
-        background-color: green;
+        background-color: $verde;
         color: white;
     }
 }
