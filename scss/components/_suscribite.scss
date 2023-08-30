@@ -32,10 +32,11 @@
             border-radius: 0.5rem;
             border: none;
 
-            &:hover {
+            .btn .active {
                 background-color: $verde;
                 color: white;
             }
+            
         }
     }
 

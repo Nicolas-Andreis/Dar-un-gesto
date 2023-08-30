@@ -109,7 +109,7 @@ body {
   border-radius: 0.5rem;
   border: none;
 }
-.sucribete-card div:nth-child(2) button:hover {
+.sucribete-card div:nth-child(2) button .btn .active {
   background-color: #91C588;
   color: white;
 }
