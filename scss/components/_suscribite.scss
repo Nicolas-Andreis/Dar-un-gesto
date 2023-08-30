@@ -1,6 +1,6 @@
-.sucribete-card{
+.sucribete-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     width: 95%;
     border: 1px solid $verde;
@@ -9,12 +9,51 @@
     text-align: center;
     padding: 1rem;
     box-shadow: map-get($sombra, normal);
-    button{
+
+    div:nth-child(1) {
+        p {
+            color: $verde;
+            font-weight: 600;
+        }
+
+    }
+
+    div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+
+        button {
+            width: 6rem;
+            height: 2rem;
+            background-color: rgba(255, 255, 255, 0);
+            color: $verde;
+            border-radius: 0.5rem;
+            border: none;
+
+            &:hover {
+                background-color: $verde;
+                color: white;
+            }
+        }
+    }
+
+    div:nth-child(3) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    button {
         width: 6rem;
         height: 2rem;
-        padding: initial;
-        margin: auto;
         background-color: $verde;
         color: white;
+    }
+
+    img {
+        width: 7rem;
     }
 }
