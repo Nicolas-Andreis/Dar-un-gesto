@@ -1,38 +1,43 @@
-.container-card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    .card-instituciones {
-        width: 45%;
-        border: 1px solid $verde;
-        border-radius: 1rem;
+.container-container-card{
+    h3{
+        margin-left: 1rem;
+    }
+    .container-card {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: 1rem auto;
-        box-shadow: map-get($sombra, normal);
-
-        .btn {
-            background-color: $verde;
-            color: white;
-            width: 7rem;
-            border-radius: 2rem;
-            height: 2rem;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 0.5rem;
-        }
-
-        img {
-            width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+        .card-instituciones {
+            width: 45%;
+            border: 1px solid $verde;
             border-radius: 1rem;
-            margin: 0.5rem;
-            height: 6rem;
-            object-fit: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 1rem auto;
+            box-shadow: map-get($sombra, normal);
+    
+            .btn {
+                background-color: $verde;
+                color: white;
+                width: 7rem;
+                border-radius: 2rem;
+                height: 2rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 0.5rem;
+            }
+    
+            img {
+                width: 90%;
+                border-radius: 1rem;
+                margin: 0.5rem;
+                height: 6rem;
+                object-fit: cover;
+            }
         }
     }
 }

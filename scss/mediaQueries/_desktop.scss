@@ -1,0 +1,32 @@
+@media (min-width: 992px) {
+
+    .container-ovalo {
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    .sucribete-card {
+        width: 50%;
+
+        button {
+            margin-left: 2rem;
+            width: 13rem;
+            height: 3rem;
+        }
+        div{
+            margin-right: 15%;
+        }
+    }
+
+    .container-container-card {
+        width: 50%;
+        margin: auto;
+
+        .container-card {
+            .card-instituciones {
+                width: 27%;
+            }
+        }
+
+    }
+}
