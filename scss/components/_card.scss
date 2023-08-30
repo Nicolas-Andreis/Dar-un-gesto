@@ -4,7 +4,7 @@
     flex-wrap: wrap;
 
     .card-instituciones {
-        width: 40%;
+        width: 45%;
         border: 1px solid green;
         border-radius: 1rem;
         display: flex;
@@ -12,6 +12,19 @@
         align-items: center;
         text-align: center;
         margin: 1rem auto;
+
+        .btn {
+            background-color: green;
+            color: white;
+            width: 7rem;
+            border-radius: 2rem;
+            height: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
 
         img {
             width: 90%;

@@ -4,11 +4,14 @@
     overflow-x: scroll;
     width: 100%;
     margin: 1rem auto;
-    /* Oculta la barra de desplazamiento */
     scrollbar-width: none;
-    /* Firefox */
+    /* Oculta la barra de desplazamiento de manera general (excepto en navegadores basados en WebKit) */
     -ms-overflow-style: none;
-    /* IE and Edge */
+    /* Para navegadores basados en WebKit */
+    &::-webkit-scrollbar {
+        display: none;
+        /* Oculta la barra de desplazamiento en navegadores WebKit */
+    }
 
     .ovalo {
         background-color: none;

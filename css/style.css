@@ -12,11 +12,14 @@
   overflow-x: scroll;
   width: 100%;
   margin: 1rem auto;
-  /* Oculta la barra de desplazamiento */
   scrollbar-width: none;
-  /* Firefox */
+  /* Oculta la barra de desplazamiento de manera general (excepto en navegadores basados en WebKit) */
   -ms-overflow-style: none;
-  /* IE and Edge */
+  /* Para navegadores basados en WebKit */
+}
+.container-ovalo::-webkit-scrollbar {
+  display: none;
+  /* Oculta la barra de desplazamiento en navegadores WebKit */
 }
 .container-ovalo .ovalo {
   background-color: none;
@@ -48,6 +51,8 @@
   height: 2rem;
   padding: initial;
   margin: auto;
+  background-color: green;
+  color: white;
 }
 
 .container-card {
@@ -56,7 +61,7 @@
   flex-wrap: wrap;
 }
 .container-card .card-instituciones {
-  width: 40%;
+  width: 45%;
   border: 1px solid green;
   border-radius: 1rem;
   display: flex;
@@ -64,6 +69,18 @@
   align-items: center;
   text-align: center;
   margin: 1rem auto;
+}
+.container-card .card-instituciones .btn {
+  background-color: green;
+  color: white;
+  width: 7rem;
+  border-radius: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 .container-card .card-instituciones img {
   width: 90%;
