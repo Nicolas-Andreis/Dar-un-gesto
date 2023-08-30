@@ -73,7 +73,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.23), 0 6px 13px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.23), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .container-ovalo .ovalo img {
   width: 3rem;
@@ -89,7 +89,7 @@ body {
   margin: 1rem auto;
   text-align: center;
   padding: 1rem;
-  box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.23), 0 6px 13px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.23), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .sucribete-card button {
   width: 6rem;
@@ -114,7 +114,7 @@ body {
   align-items: center;
   text-align: center;
   margin: 1rem auto;
-  box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.23), 0 6px 13px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.23), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .container-card .card-instituciones .btn {
   background-color: #91C588;
