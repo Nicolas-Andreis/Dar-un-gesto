@@ -109,7 +109,7 @@ body {
   border-radius: 0.5rem;
   border: none;
 }
-.sucribete-card div:nth-child(2) button .btn .active {
+.sucribete-card div:nth-child(2) button.active {
   background-color: #91C588;
   color: white;
 }
@@ -265,6 +265,12 @@ footer div:nth-child(2) {
   }
   .container-container-card .container-card .card-instituciones {
     width: 27%;
+  }
+  .porQueDonar {
+    width: 50%;
+  }
+  .cardFinal {
+    width: 40%;
   }
 }
 

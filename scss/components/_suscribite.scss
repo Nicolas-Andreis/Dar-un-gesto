@@ -32,7 +32,7 @@
             border-radius: 0.5rem;
             border: none;
 
-            .btn .active {
+            &.active {
                 background-color: $verde;
                 color: white;
             }
