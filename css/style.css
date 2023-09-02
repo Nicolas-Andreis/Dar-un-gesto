@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -112,6 +113,7 @@ body {
 .sucribete-card div:nth-child(2) button.active {
   background-color: #91C588;
   color: white;
+  width: 9rem;
 }
 .sucribete-card div:nth-child(3) {
   display: flex;
@@ -193,7 +195,6 @@ footer img {
   font-weight: bold;
 }
 .porQueDonar p {
-  width: 90%;
   text-align: center;
 }
 
@@ -231,6 +232,143 @@ footer img {
 .cardFinal div button {
   width: 40%;
   margin: 1rem auto;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo oscuro con transparencia */
+  z-index: 1000;
+  /* Asegura que el modal esté en la parte superior */
+}
+
+/* Estilos para el contenido dentro del modal */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  /* Color de fondo del modal */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  /* Asegura que el contenido del modal esté por encima del fondo */
+  width: 90%;
+  border: 3px solid #91C588;
+  border-radius: 1.5rem;
+}
+
+/* Estilos para el botón de cierre del modal */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  /* Color del botón de cierre */
+}
+
+/* Estilos para el formulario dentro del modal */
+.formulario {
+  /* Estilos para el formulario, como márgenes, alineación, etc. */
+}
+
+/* Estilos para los campos de entrada en el formulario */
+.campoDatos {
+  width: 78vw;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #91C588;
+  border-radius: 5px;
+  height: 2rem;
+}
+
+/* Estilos para el botón de enviar en el formulario */
+.btn {
+  padding: 10px 20px;
+  background-color: #91C588;
+  /* Color de fondo del botón */
+  color: #fff;
+  /* Color del texto del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 6rem;
+}
+
+/* Estilos para el botón de cierre (cruz) del modal */
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  /* Color de la cruz */
+  z-index: 1002;
+  /* Asegura que esté por encima del contenido del modal */
+}
+
+.close-modal:hover {
+  color: #ff0000;
+  /* Cambia el color al pasar el cursor sobre la cruz */
+}
+
+.container-P {
+  display: flex;
+  justify-content: space-around;
+}
+.container-P p:nth-child(1) {
+  color: black;
+  font-weight: bold;
+}
+.container-P p:nth-child(2) {
+  color: #91C588;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.destino {
+  color: black;
+  font-weight: bold;
+}
+
+.container-destino p:nth-child(1) {
+  color: #91C588;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.container-destino p:nth-child(2) {
+  color: gray;
+  text-align: center;
+}
+
+.container-button {
+  display: flex;
+  justify-content: end;
+}
+.container-button button {
+  background-color: #91C588;
+  color: white;
+  width: 6rem;
+  border: none;
+  border-radius: 1rem;
+  height: 1.5rem;
+}
+
+.containerEnviar {
+  display: flex;
+  justify-content: center;
 }
 
 footer div:nth-child(1) {

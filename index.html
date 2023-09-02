@@ -27,9 +27,12 @@
     <meta name="author" content="Nicolás Andreis">
 
     <!--BOOSTRAP CDN-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,7 +62,7 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse col-md-6 offset-md-8" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse col-md-6 offset-md-7" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active btn btn-outline-success" aria-current="page" href="#">Dar una mano</a>
@@ -68,8 +71,8 @@
                         <a class="nav-link btn btn-outline-success " type="button" href="#">Blog</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn btn-outline-success" type="button" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle btn btn-outline-success" type="button" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Instituciones
                         </a>
                         <ul class="dropdown-menu">
@@ -143,7 +146,7 @@
                 <img src="./imagenes/iconos/formularioSeguro.png" alt="formulario seguro">
                 <button type="button" class="btn btn-outline-success">Siguiente</button>
             </div>
-            
+
         </div>
         <div class="container-container-card">
             <h3 class="subtitulos">A quien ayudar?</h3>
@@ -151,60 +154,358 @@
                 <div class="card-instituciones">
                     <img src="./imagenes/categorias/juguetes.jpg" alt="juguetes">
                     <h3 class="subtitulos">juguetes</h3>
-                    <p  class="texto">Dona dinero para el hogar cantilo</p>
-                    <button class="btn btn-outline-success">Donar</button>
+                    <p class="texto">Dona dinero para el hogar cantilo</p>
+                    <button class="btn btn-outline-success" data-modal="modal-juguetes">Donar</button>
+                </div>
+                <!-- Modal de pedido -->
+                <div class="modal" id="modal-juguetes">
+                    <div class="modal-content">
+                        <span class="close-modal" data-modal="modal-juguetes">&times;</span>
+                        <div>
+                            <div class="container-P">
+                                <p>Estás donando</p>
+                                <p>Juguetes</p>
+                            </div>
+                            <p class="destino">Destino</p>
+                            <div class="container-destino">
+                                <p>Donación para juguetes</p>
+                                <p>*Tu donación será destinada para comprar juguetes</p>
+                            </div>
+                            <div class="container-button"><button id="ver-hogar-button">
+                                    <!-- Agrega un ID para seleccionar el botón en JavaScript -->
+                                    <p>Ver hogar</p>
+                                </button></div>
+
+                            <section class="formulario">
+                                <form action="https://formsubmit.co/7288814e4902453411953e24e70fa9b1" method="POST">
+                                    <div class="datosContainer">
+                                        <label for="name" class="datos">Nombre
+                                            <input type="text" name="nombre" id="name" placeholder="Nombre"
+                                                class="campoDatos">
+                                        </label>
+                                        <label for="email" class="datos">Email
+                                            <input type="email" name="email" id="email" placeholder="correo@hotmail.com"
+                                                class="campoDatos">
+                                        </label>
+                                        <label for="number" class="datos">Teléfono
+                                            <input type="tel" name="telefono" id="number" placeholder="12234556"
+                                                class="campoDatos">
+                                        </label>
+                                    </div>
+                                    <label for="" class="containerEnviar">
+                                        <input type="submit" value="Donar" name="" id=""
+                                            class="btn col-5 col-lg-3 btn-outline-warning">
+                                    </label>
+
+                                    <input type="hidden" name="_next"
+                                        value="http://habemuspizza.infinityfreeapp.com/pages/mailconfirm.html">
+                                    <input type="hidden" name="_captcha" value="false">
+                                </form>
+                            </section>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card-instituciones">
                     <img src="./imagenes/categorias/limpieza.jpg" alt="limpieza">
                     <h3 class="subtitulos">limpieza</h3>
                     <p class="texto">Dona dinero para el hogar cantilo</p>
-                    <button class="btn btn-outline-success">Donar</button>
+                    <button class="btn btn-outline-success" data-modal="modal-limpieza">Donar</button>
+                </div>
+
+                <!-- Modal de pedido -->
+                <div class="modal" id="modal-limpieza">
+                    <div class="modal-content">
+                        <span class="close-modal" data-modal="modal-limpieza">&times;</span>
+                        <div>
+                            <div class="container-P">
+                                <p>Estás donando</p>
+                                <p>Limpieza</p>
+                            </div>
+                            <p class="destino">Destino</p>
+                            <div class="container-destino">
+                                <p>Donación para articulos de limpieza</p>
+                                <p>*Tu donación será destinada para comprar articulos de limpiez</p>
+                            </div>
+                            <div class="container-button"><button id="ver-hogar-button">
+                                    <!-- Agrega un ID para seleccionar el botón en JavaScript -->
+                                    <p>Ver hogar</p>
+                                </button></div>
+
+                            <section class="formulario">
+                                <form action="https://formsubmit.co/7288814e4902453411953e24e70fa9b1" method="POST">
+                                    <div class="datosContainer">
+                                        <label for="name" class="datos">Nombre
+                                            <input type="text" name="nombre" id="name" placeholder="Nombre"
+                                                class="campoDatos">
+                                        </label>
+                                        <label for="email" class="datos">Email
+                                            <input type="email" name="email" id="email" placeholder="correo@hotmail.com"
+                                                class="campoDatos">
+                                        </label>
+                                        <label for="number" class="datos">Teléfono
+                                            <input type="tel" name="telefono" id="number" placeholder="12234556"
+                                                class="campoDatos">
+                                        </label>
+                                    </div>
+                                    <label for="" class="containerEnviar">
+                                        <input type="submit" value="Donar" name="" id=""
+                                            class="btn col-5 col-lg-3 btn-outline-warning">
+                                    </label>
+
+                                    <input type="hidden" name="_next"
+                                        value="http://habemuspizza.infinityfreeapp.com/pages/mailconfirm.html">
+                                    <input type="hidden" name="_captcha" value="false">
+                                </form>
+                            </section>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card-instituciones">
                     <img src="./imagenes/categorias/futbol.jpg" alt="pelota">
                     <h3 class="subtitulos">equipo deportivo</h3>
-                    <p  class="texto">Dona dinero para el hogar cantilo</p>
-                    <button class="btn btn-outline-success">Donar</button>
+                    <p class="texto">Dona dinero para el hogar cantilo</p>
+                    <button class="btn btn-outline-success" data-modal="modal-equipodeportivo">Donar</button>
+                </div>
+
+                <!-- Modal de pedido -->
+                <div class="modal" id="modal-equipodeportivo">
+                    <div class="modal-content">
+                        <span class="close-modal" data-modal="modal-equipodeportivo">&times;</span>
+                        <div>
+                            <div class="container-P">
+                                <p>Estás donando</p>
+                                <p>Deportes</p>
+                            </div>
+                            <p class="destino">Destino</p>
+                            <div class="container-destino">
+                                <p>Donación para articulos deportivos</p>
+                                <p>*Tu donación será destinada para comprar articulos deportivos</p>
+                            </div>
+                            <div class="container-button"><button id="ver-hogar-button">
+                                    <!-- Agrega un ID para seleccionar el botón en JavaScript -->
+                                    <p>Ver hogar</p>
+                                </button></div>
+
+                            <section class="formulario">
+                                <form action="https://formsubmit.co/7288814e4902453411953e24e70fa9b1" method="POST">
+                                    <div class="datosContainer">
+                                        <label for="name" class="datos">Nombre
+                                            <input type="text" name="nombre" id="name" placeholder="Nombre"
+                                                class="campoDatos">
+                                        </label>
+                                        <label for="email" class="datos">Email
+                                            <input type="email" name="email" id="email" placeholder="correo@hotmail.com"
+                                                class="campoDatos">
+                                        </label>
+                                        <label for="number" class="datos">Teléfono
+                                            <input type="tel" name="telefono" id="number" placeholder="12234556"
+                                                class="campoDatos">
+                                        </label>
+                                    </div>
+                                    <label for="" class="containerEnviar">
+                                        <input type="submit" value="Donar" name="" id=""
+                                            class="btn col-5 col-lg-3 btn-outline-warning">
+                                    </label>
+
+                                    <input type="hidden" name="_next"
+                                        value="http://habemuspizza.infinityfreeapp.com/pages/mailconfirm.html">
+                                    <input type="hidden" name="_captcha" value="false">
+                                </form>
+                            </section>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card-instituciones">
                     <img src="./imagenes/categorias/ropa.jpg" alt="ropa">
                     <h3 class="subtitulos">ropa</h3>
                     <p class="texto">Dona dinero para el hogar cantilo</p>
-                    <button class="btn btn-outline-success">Donar</button>
+                    <button class="btn btn-outline-success" data-modal="modal-ropa">Donar</button>
                 </div>
+
+                <!-- Modal de pedido -->
+                <div class="modal" id="modal-ropa">
+                    <div class="modal-content">
+                        <span class="close-modal" data-modal="modal-ropa">&times;</span>
+                        <div>
+                            <div class="container-P">
+                                <p>Estás donando</p>
+                                <p>Ropa</p>
+                            </div>
+                            <p class="destino">Destino</p>
+                            <div class="container-destino">
+                                <p>Donación para ropa</p>
+                                <p>*Tu donación será destinada para comprar ropa</p>
+                            </div>
+                            <div class="container-button"><button id="ver-hogar-button">
+                                    <!-- Agrega un ID para seleccionar el botón en JavaScript -->
+                                    <p>Ver hogar</p>
+                                </button></div>
+
+                            <section class="formulario">
+                                <form action="https://formsubmit.co/7288814e4902453411953e24e70fa9b1" method="POST">
+                                    <div class="datosContainer">
+                                        <label for="name" class="datos">Nombre
+                                            <input type="text" name="nombre" id="name" placeholder="Nombre"
+                                                class="campoDatos">
+                                        </label>
+                                        <label for="email" class="datos">Email
+                                            <input type="email" name="email" id="email" placeholder="correo@hotmail.com"
+                                                class="campoDatos">
+                                        </label>
+                                        <label for="number" class="datos">Teléfono
+                                            <input type="tel" name="telefono" id="number" placeholder="12234556"
+                                                class="campoDatos">
+                                        </label>
+                                    </div>
+                                    <label for="" class="containerEnviar">
+                                        <input type="submit" value="Donar" name="" id=""
+                                            class="btn col-5 col-lg-3 btn-outline-warning">
+                                    </label>
+
+                                    <input type="hidden" name="_next"
+                                        value="http://habemuspizza.infinityfreeapp.com/pages/mailconfirm.html">
+                                    <input type="hidden" name="_captcha" value="false">
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="card-instituciones">
                     <img src="./imagenes/categorias/libros.jpg" alt="libros">
                     <h3 class="subtitulos">libros</h3>
                     <p class="texto">Dona dinero para el hogar cantilo</p>
-                    <button class="btn btn-outline-success">Donar</button>
+                    <button class="btn btn-outline-success" data-modal="modal-libros">Donar</button>
                 </div>
+
+                <!-- Modal de pedido -->
+                <div class="modal" id="modal-libros">
+                    <div class="modal-content">
+                        <span class="close-modal" data-modal="modal-libros">&times;</span>
+                        <div>
+                            <div class="container-P">
+                                <p>Estás donando</p>
+                                <p>Libros</p>
+                            </div>
+                            <p class="destino">Destino</p>
+                            <div class="container-destino">
+                                <p>Donación para comprar libros</p>
+                                <p>*Tu donación será destinada para comprar libros</p>
+                            </div>
+                            <div class="container-button"><button id="ver-hogar-button">
+                                    <!-- Agrega un ID para seleccionar el botón en JavaScript -->
+                                    <p>Ver hogar</p>
+                                </button></div>
+
+                            <section class="formulario">
+                                <form action="https://formsubmit.co/7288814e4902453411953e24e70fa9b1" method="POST">
+                                    <div class="datosContainer">
+                                        <label for="name" class="datos">Nombre
+                                            <input type="text" name="nombre" id="name" placeholder="Nombre"
+                                                class="campoDatos">
+                                        </label>
+                                        <label for="email" class="datos">Email
+                                            <input type="email" name="email" id="email" placeholder="correo@hotmail.com"
+                                                class="campoDatos">
+                                        </label>
+                                        <label for="number" class="datos">Teléfono
+                                            <input type="tel" name="telefono" id="number" placeholder="12234556"
+                                                class="campoDatos">
+                                        </label>
+                                    </div>
+                                    <label for="" class="containerEnviar">
+                                        <input type="submit" value="Donar" name="" id=""
+                                            class="btn col-5 col-lg-3 btn-outline-warning">
+                                    </label>
+
+                                    <input type="hidden" name="_next"
+                                        value="http://habemuspizza.infinityfreeapp.com/pages/mailconfirm.html">
+                                    <input type="hidden" name="_captcha" value="false">
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="card-instituciones">
                     <img src="./imagenes/categorias/alimentos.jpg" alt="alimentos">
                     <h3 class="subtitulos">alimentos</h3>
                     <p class="texto">Dona dinero para el hogar cantilo</p>
-                    <button class="btn btn-outline-success">Donar</button>
+                    <button class="btn btn-outline-success" data-modal="modal-alimentos">Donar</button>
                 </div>
 
-                
+                <!-- Modal de pedido -->
+                <div class="modal" id="modal-alimentos">
+                    <div class="modal-content">
+                        <span class="close-modal" data-modal="modal-alimentos">&times;</span>
+                        <div>
+                            <div class="container-P">
+                                <p>Estás donando</p>
+                                <p>Alimentos</p>
+                            </div>
+                            <p class="destino">Destino</p>
+                            <div class="container-destino">
+                                <p>Donación para comprar alimentos</p>
+                                <p>*Tu donación será destinada para comprar alimentos</p>
+                            </div>
+                            <div class="container-button"><button id="ver-hogar-button">
+                                    <!-- Agrega un ID para seleccionar el botón en JavaScript -->
+                                    <p>Ver hogar</p>
+                                </button></div>
+
+                            <section class="formulario">
+                                <form action="https://formsubmit.co/7288814e4902453411953e24e70fa9b1" method="POST">
+                                    <div class="datosContainer">
+                                        <label for="name" class="datos">Nombre
+                                            <input type="text" name="nombre" id="name" placeholder="Nombre"
+                                                class="campoDatos">
+                                        </label>
+                                        <label for="email" class="datos">Email
+                                            <input type="email" name="email" id="email" placeholder="correo@hotmail.com"
+                                                class="campoDatos">
+                                        </label>
+                                        <label for="number" class="datos">Teléfono
+                                            <input type="tel" name="telefono" id="number" placeholder="12234556"
+                                                class="campoDatos">
+                                        </label>
+                                    </div>
+                                    <label for="" class="containerEnviar">
+                                        <input type="submit" value="Donar" name="" id=""
+                                            class="btn col-5 col-lg-3 btn-outline-warning">
+                                    </label>
+
+                                    <input type="hidden" name="_next"
+                                        value="http://habemuspizza.infinityfreeapp.com/pages/mailconfirm.html">
+                                    <input type="hidden" name="_captcha" value="false">
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
         <div class="porQueDonar">
             <h3 class="subtitulos">Por que donar?</h3>
-            <p class="texto">En un mundo donde cada pequeño gesto importa, tú tienes el poder de cambiar vidas. Imagina el impacto que podemos crear al unirnos para brindar esperanza y oportunidades a quienes más lo necesitan. Niños inocentes y personas de bajos recursos merecen un futuro lleno de posibilidades, y tú puedes ser la chispa que encienda ese cambio.</p>
+            <p class="texto">En un mundo donde cada pequeño gesto importa, tú tienes el poder de cambiar vidas. Imagina
+                el impacto que podemos crear al unirnos para brindar esperanza y oportunidades a quienes más lo
+                necesitan. Niños inocentes y personas de bajos recursos merecen un futuro lleno de posibilidades, y tú
+                puedes ser la chispa que encienda ese cambio.</p>
         </div>
         <div class="cardFinal">
             <div>
                 <img src="./imagenes/cardsuscribite/neneojos.jpg" alt="nene">
             </div>
             <div>
-                <p  class="texto">Sumate a nosotros</p> 
+                <p class="texto">Sumate a nosotros</p>
                 <p class="texto">Da un buen gesto</p>
-                    <button class="btn btn-outline-success">Donar</button>
+                <button class="btn btn-outline-success">Donar</button>
             </div>
         </div>
     </main>
