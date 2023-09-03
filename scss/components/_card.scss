@@ -1,5 +1,5 @@
 .container-container-card{
-    h3{
+    .margin-left{
         margin-left: 1rem;
         font-weight: bold;
     }
@@ -18,6 +18,9 @@
             text-align: center;
             margin: 1rem auto;
             box-shadow: map-get($sombra, normal);
+            p{
+                height: 6rem;
+            }
     
             .btn {
                 background-color: $verde;
